@@ -1,0 +1,44 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #f8f9fa;
+    /* Background color for the entire page */
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 3px;
+    width: 600px; /* Aumentar el tamaño del contenedor */
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.text-center img {
+    max-width: 150px;
+    /* Adjust size as needed */
+}
+
+.text-center h2 {
+    font-size: 2rem;
+}
+
+.form-group input, 
+.form-check-label, 
+.btn {
+    font-size: 1.5rem; /* Tamaño de fuente similar a h4 */
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el checkbox y el texto */
+}
