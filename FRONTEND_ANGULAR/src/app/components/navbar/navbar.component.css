@@ -1,0 +1,72 @@
+a {
+    font-weight: bold;
+    /* Poner el texto en negrita */
+    font-size: 24px;
+    /* Aumentar el tamaño del texto */
+    color: black;
+}
+
+span {
+    font-weight: bold;
+    /* Poner el texto en negrita */
+    font-size: 17px;
+    /* Aumentar el tamaño del texto */
+    color: black;
+}
+
+hr {
+    margin-top: 0;
+    border: 6px solid #303c48;
+}
+
+.with-border {
+    position: relative;
+    padding-right: 10px;
+    /* Espacio entre el texto y el borde */
+    margin-right: 20px;
+    /* Espacio entre el borde y el siguiente elemento */
+}
+
+.with-border::after {
+    content: '';
+    position: absolute;
+    top: -29px;
+    /* Ajustar para extender hacia arriba */
+    bottom: -9px;
+    /* Ajustar para extender hacia abajo */
+    right: 0;
+    width: 4px;
+    background-color: #ccc;
+}
+
+.with-border2 {
+    position: relative;
+    padding-right: 10px;
+    /* Espacio entre el texto y el borde */
+    margin-right: 20px;
+    /* Espacio entre el borde y el siguiente elemento */
+}
+
+.with-border2::after {
+    
+    content: '';
+    position: absolute;
+    top: -14px;
+    /* Ajustar para extender hacia arriba */
+    bottom: -9px;
+    /* Ajustar para extender hacia abajo */
+    right: 0;
+    width: 4px;
+    background-color: #ccc;
+}
+
+/* Estilos para el icono */
+.bi-person-circle {
+    /* Tamaño del ícono */
+    font-size: 1.5rem;
+    /* Color del ícono */
+    /*color: #007bff;*/
+    /* Espacio entre el ícono y el texto */
+    margin-right: 15px;
+    margin-left: 15px;
+}
