@@ -15,8 +15,8 @@ LoginUser() {
   const email = (<HTMLInputElement>document.getElementById('usuario')).value;
   const password = (<HTMLInputElement>document.getElementById('contrasena')).value;
 
-  if (email == 'admin' && password == '1234') {
-    this.router.navigate(['/home']);
+  if (email == 'admin' && password == '123') {
+    this.router.navigate(['/home-admin']);
   } else {
     alert('Usuario o Contraseña incorrecto UWU');
   }
