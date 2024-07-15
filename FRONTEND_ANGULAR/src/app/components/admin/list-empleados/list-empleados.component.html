@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-3">
+            <div class="d-flex">
+                <div class="bg-light with-border" id="sidebar-wrapper">
+                    <div class="sidebar-heading">Proyecto</div>
+                    <div class="list-group">
+                        <div class="p-3 mt-4 mb-4 title">
+                            <strong>Gestión de la configuración de software</strong>
+                        </div>
+                        <hr>
+                        <div class="mt-4"></div>
+                        <a href="#" class="list-group-item bg-light mb-5"><i class="bi bi-calendar-check"></i> Nómina</a>
+                        <a href="#" class="list-group-item bg-light mb-5"><i class="bi bi-person-rolodex"></i> Roles</a>
+                        <div class="mb-4"></div>
+                        <hr>
+                        <a href="#" class="list-group-item bg-light mb-2 mt-2"><i class="bi bi-box-arrow-left"></i> Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-9 ms-5">
+            <div id="page-content-wrapper" class="mx-auto justify-content-center ms-4">
+                <div class="container-fluid content">
+                    <div class="container mt-3">
+                        <h2>Listado de empleados del proyecto:</h2>
+                        <div class="d-flex justify-content-end mb-3">
+                            <button class="btn btn-primary">
+                                Agregar empleado <i class="bi bi-person-plus-fill"></i>
+                            </button>
+                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>DNI</th>
+                                    <th>NOMBRES</th>
+                                    <th>APELLIDOS</th>
+                                    <th>ACCIONES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let empleado of empleados">
+                                    <td>{{ empleado.dni }}</td>
+                                    <td>{{ empleado.nombres }}</td>
+                                    <td>{{ empleado.apellidos }}</td>
+                                    <td>
+                                        <i class="bi bi-pencil-square text-primary me-3" (click)="editarEmpleado(empleado)"></i>
+                                        <i class="bi bi-trash text-danger" (click)="eliminarEmpleado(empleado)"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

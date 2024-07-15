@@ -1,0 +1,140 @@
+/* Cambia el color de fondo de la barra lateral */
+#sidebar-wrapper {
+    width: 255px;
+    color: rgb(0, 0, 0);
+    /* Color del texto */
+}
+
+/* Estilo para el título del proyecto */
+.sidebar-heading {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #343a40;
+    /* Mismo color que la barra lateral */
+    color: #f8f9fa;
+    /* Color del texto */
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    background-color: #343a40;
+    color: rgb(0, 0, 0); /* Color de texto */
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px; /* Ajustar el relleno según sea necesario */
+}
+
+.list-group-item i {
+    font-size: 20px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    line-height: 0; /* Ajuste para alinear verticalmente-- */
+}
+
+
+
+/* Estilo para el título del contenido */
+.container-fluid h1 {
+    background-color: #495057;
+    /* Color del fondo del título */
+    color: white;
+    /* Color del texto del título */
+    padding: 1rem;
+    /* Relleno del título */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+hr {
+    margin-top: 0;
+    border: 6px solid #303c48;
+    width: auto;
+}
+
+.with-border {
+    position: relative;
+    padding-right: 10px;
+    /* Espacio entre el texto y el borde */
+    margin-right: 25px;
+    /* Espacio entre el borde y el siguiente elemento */
+}
+
+.with-border::after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    /* Ajustar para extender hacia arriba */
+    bottom: -15px;
+    /* Ajustar para extender hacia abajo */
+    right: 0;
+    width: 4px;
+    background-color: #ccc;
+}
+
+.title {
+    font-size: 25px;
+}
+
+/* Flexbox layout para alinear el contenido en la parte inferior derecha */
+#page-content-wrapper {
+    display: flex;
+    justify-content: start; /* Centra horizontalmente */
+}
+
+.container-fluid.content {
+    max-width: 100%; /* Ancho máximo ajustado según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.container {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table {
+    margin: auto; /* Centrar la tabla horizontalmente */
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.table td i {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste adicional para el contenedor de la tabla */
+#page-content-wrapper .container-fluid.content .container {
+    max-width: auto; /* Ajustar según sea necesario */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-right-margin {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Ajusta el ancho del contenedor col-3 según tus necesidades */
+.col-3 {
+    width: 250px; /* Por ejemplo, ajusta el ancho aquí */
+}
+
+/* Si estás utilizando flexbox, puedes agregar flex-wrap */
+.col-3 {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten a la siguiente línea */
+}
