@@ -65,7 +65,7 @@ hr {
     position: absolute;
     top: -17px;
     /* Ajustar para extender hacia arriba */
-    bottom: -35px;
+    bottom: -9px;
     /* Ajustar para extender hacia abajo */
     right: 0;
     width: 4px;
@@ -85,5 +85,6 @@ hr {
 .container-fluid.content {
     margin-left: 1350px;
     margin-top: 650px;
+    margin-bottom: 27px;
     align-self: flex-end;
 }
