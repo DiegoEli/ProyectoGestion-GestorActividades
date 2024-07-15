@@ -1,0 +1,89 @@
+/* Cambia el color de fondo de la barra lateral */
+#sidebar-wrapper {
+    width: 255px;
+    color: rgb(0, 0, 0);
+    /* Color del texto */
+}
+
+/* Estilo para el título del proyecto */
+.sidebar-heading {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #343a40;
+    /* Mismo color que la barra lateral */
+    color: #f8f9fa;
+    /* Color del texto */
+}
+
+/* Estilo para los elementos de la lista */
+.list-group-item {
+    display: flex;
+    align-items: center;
+    background-color: #343a40;
+    /* Mismo color que la barra lateral */
+    color: rgb(0, 0, 0);
+    /* Color del texto */
+    border: none;
+    /* Sin bordes */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Espaciado entre el icono y el texto */
+.list-group-item i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* Estilo para el título del contenido */
+.container-fluid h1 {
+    background-color: #495057;
+    /* Color del fondo del título */
+    color: white;
+    /* Color del texto del título */
+    padding: 1rem;
+    /* Relleno del título */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+hr {
+    margin-top: 0;
+    border: 6px solid #303c48;
+}
+
+.with-border {
+    position: relative;
+    padding-right: 1px;
+    /* Espacio entre el texto y el borde */
+    margin-right: 25px;
+    /* Espacio entre el borde y el siguiente elemento */
+}
+
+.with-border::after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    /* Ajustar para extender hacia arriba */
+    bottom: -35px;
+    /* Ajustar para extender hacia abajo */
+    right: 0;
+    width: 4px;
+    background-color: #ccc;
+}
+
+.title {
+    font-size: 25px;
+}
+
+/* Flexbox layout para alinear el contenido en la parte inferior derecha */
+#page-content-wrapper {
+    display: flex;
+    flex-grow: 0;
+}
+
+.container-fluid.content {
+    margin-left: 1350px;
+    margin-top: 650px;
+    align-self: flex-end;
+}
