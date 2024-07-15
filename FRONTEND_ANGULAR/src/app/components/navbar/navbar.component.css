@@ -16,7 +16,7 @@ span {
 
 hr {
     margin-top: 0;
-    width: 1915px;
+    width: auto;
     border: 6px solid #303c48;
 }
 
@@ -33,7 +33,7 @@ hr {
     position: absolute;
     top: -29px;
     /* Ajustar para extender hacia arriba */
-    bottom: -9px;
+    bottom: -10px;
     /* Ajustar para extender hacia abajo */
     right: 0;
     width: 4px;

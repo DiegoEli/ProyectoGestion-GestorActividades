@@ -15,25 +15,24 @@
     /* Color del texto */
 }
 
-/* Estilo para los elementos de la lista */
 .list-group-item {
     display: flex;
-    align-items: center;
+    align-items: center; /* Alinear verticalmente */
     background-color: #343a40;
-    /* Mismo color que la barra lateral */
-    color: rgb(0, 0, 0);
-    /* Color del texto */
+    color: rgb(0, 0, 0); /* Color de texto */
     border: none;
-    /* Sin bordes */
     font-size: 20px;
     font-weight: bold;
+    padding: 10px; /* Ajustar el relleno según sea necesario */
 }
 
-/* Espaciado entre el icono y el texto */
 .list-group-item i {
-    margin-right: 15px;
     font-size: 20px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    line-height: 0; /* Ajuste para alinear verticalmente-- */
 }
+
+
 
 /* Estilo para el título del contenido */
 .container-fluid h1 {
@@ -50,11 +49,12 @@
 hr {
     margin-top: 0;
     border: 6px solid #303c48;
+    width: auto;
 }
 
 .with-border {
     position: relative;
-    padding-right: 1px;
+    padding-right: 10px;
     /* Espacio entre el texto y el borde */
     margin-right: 25px;
     /* Espacio entre el borde y el siguiente elemento */
@@ -65,7 +65,7 @@ hr {
     position: absolute;
     top: -17px;
     /* Ajustar para extender hacia arriba */
-    bottom: -9px;
+    bottom: -15px;
     /* Ajustar para extender hacia abajo */
     right: 0;
     width: 4px;
@@ -83,8 +83,6 @@ hr {
 }
 
 .container-fluid.content {
-    margin-left: 1350px;
-    margin-top: 650px;
-    margin-bottom: 27px;
+    align-items: end;
     align-self: flex-end;
 }
